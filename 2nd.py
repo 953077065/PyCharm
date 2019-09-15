@@ -71,7 +71,7 @@ g = 9.8  # g
 r = 0.2  # 鼓半径
 sg = 0.11  # 绳高
 sc = 1.7  # 绳长
-m = 3.6  # 鼓的质量
+m = 3.6 / 8 # 鼓的质量
 t = 0.1  # 接触时间
 # 合力分力
 Fhy = Fh * sg / sc
@@ -83,7 +83,7 @@ print("\ta:\t",a)
 v = a * t
 print("\tv:\t",v)
 # mgh=1/2*v^2*m h=>高度
-h = v ** 2 / 2 * g
+h = v ** 2 / (2 * g)
 print("\th:\t",h)
 # 角度tanx=h/r
 degree = math.degrees(math.atan(h / r))
